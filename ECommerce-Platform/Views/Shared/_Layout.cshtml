@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechStore - Elektron Mağaza</title>
+    <link rel="stylesheet" href="~/assests/css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1>TechStore</h1>
+                </div>
+                <nav class="nav">
+                    <ul>
+                        <li><a href="~/#" class="active">Ana səhifə</a></li>
+                        <li><a href="~/#products">Məhsullar</a></li>
+                        <li><a href="~/#about">Haqqımızda</a></li>
+                        <li><a href="~/#contact">Əlaqə</a></li>
+                    </ul>
+                </nav>
+                <div class="header-actions">
+                    <div class="search-box">
+                        <input type="text" id="searchInput" placeholder="Axtar...">
+                        <button id="searchBtn">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <circle cx="11" cy="11" r="8"></circle>
+                                <path d="m21 21-4.35-4.35"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <button class="cart-btn" id="cartBtn">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <circle cx="9" cy="21" r="1"></circle>
+                            <circle cx="20" cy="21" r="1"></circle>
+                            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                        </svg>
+                        <span class="cart-count" id="cartCount">0</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+            @RenderBody()
+   <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>TechStore</h3>
+                    <p>Ən keyfiyyətli elektron məhsullar bizimlə</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Əlaqə</h4>
+                    <p>Email: info@techstore.az</p>
+                    <p>Tel: +994 12 345 67 89</p>
+                </div>
+                <div class="footer-section">
+                    <h4>İş saatları</h4>
+                    <p>Bazar ertəsi - Cümə: 09:00 - 18:00</p>
+                    <p>Şənbə: 10:00 - 16:00</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 TechStore. Bütün hüquqlar qorunur.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="~/assests/js/script.js"></script>
+</body>
+</html>
