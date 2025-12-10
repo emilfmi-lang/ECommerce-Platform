@@ -1,8 +1,94 @@
-﻿@{
+﻿@model HomeVm
+@{
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+@foreach (var slider in Model.Sliders)
+{
+
+    <section class="hero">
+     <div class="container">
+            <div class="hero-content">
+   <h2>@slider.Title</h2>
+              <p>@slider.SubTitle</p>
+   <a href="@slider.ButtonUrl" class="btn-primary">
+                    @slider.ButtonText
+     </a>
+            </div>
+     </div>
+  </section>
+}
+
+
+
+<!-- Filters -->
+<section class="filters" id="products">
+    <div class="container">
+        <div class="filter-bar">
+  <div class="filter-group">
+      <label>Kateqoriya:</label>
+                <select id="categoryFilter">
+          <option value="all">Hamısı</option>
+                    <option value="telefon">Telefonlar</option>
+   <option value="notebook">Notebooklar</option>
+   <option value="aksesuar">Aksesuarlar</option>
+   <option value="audio">Audio</option>
+ </select>
+     </div>
+            <div class="filter-group">
+       <label>Qiymət:</label>
+          <select id="priceFilter">
+        <option value="all">Hamısı</option>
+       <option value="0-500">0 - 500 ₼</option>
+      <option value="500-1000">500 - 1000 ₼</option>
+      <option value="1000-2000">1000 - 2000 ₼</option>
+        <option value="2000+">2000 ₼+</option>
+                </select>
+        </div>
+      <div class="filter-group">
+   <label>Sıralama:</label>
+    <select id="sortFilter">
+            <option value="default">Standart</option>
+    <option value="price-asc">Qiymət: Aşağıdan yuxarı</option>
+       <option value="price-desc">Qiymət: Yuxarıdan aşağı</option>
+     <option value="name">Ad: A-Z</option>
+          </select>
+      </div>
+        </div>
+    </div>
+</section>
+
+<!-- Products Grid -->
+<section class="products-section">
+    <div class="container">
+        <div class="products-grid" id="productsGrid">
+ <!-- Products will be loaded by JavaScript -->
+        </div>
+    </div>
+</section>
+
+<!-- Cart Sidebar -->
+<div class="cart-sidebar" id="cartSidebar">
+  <div class="cart-header">
+        <h3>Səbət</h3>
+        <button class="close-cart" id="closeCart">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+      <line x1="18" y1="6" x2="6" y2="18"></line>
+           <line x1="6" y1="6" x2="18" y2="18"></line>
+   </svg>
+        </button>
+  </div>
+    <div class="cart-items" id="cartItems">
+        <!-- Cart items will be loaded here -->
+    </div>
+ <div class="cart-footer">
+        <div class="cart-total">
+ <span>Toplam:</span>
+     <span id="cartTotal">0 ₼</span>
+        </div>
+        <button class="btn-primary btn-checkout" id="checkoutBtn">Sifarişi tamamla</button>
+ </div>
 </div>
+
+<!-- Cart Overlay -->
+<div class="cart-overlay" id="cartOverlay"></div>

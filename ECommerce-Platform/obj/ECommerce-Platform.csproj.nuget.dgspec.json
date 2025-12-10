@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User\\Desktop\\Pa201MVCTask\\ECommerce-Platform\\ECommerce-Platform\\ECommerce-Platform.csproj": {}
+    "C:\\Users\\User\\Desktop\\ECommerce-Platform\\ECommerce-Platform\\ECommerce-Platform.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User\\Desktop\\Pa201MVCTask\\ECommerce-Platform\\ECommerce-Platform\\ECommerce-Platform.csproj": {
+    "C:\\Users\\User\\Desktop\\ECommerce-Platform\\ECommerce-Platform\\ECommerce-Platform.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\Desktop\\Pa201MVCTask\\ECommerce-Platform\\ECommerce-Platform\\ECommerce-Platform.csproj",
+        "projectUniqueName": "C:\\Users\\User\\Desktop\\ECommerce-Platform\\ECommerce-Platform\\ECommerce-Platform.csproj",
         "projectName": "ECommerce-Platform",
-        "projectPath": "C:\\Users\\User\\Desktop\\Pa201MVCTask\\ECommerce-Platform\\ECommerce-Platform\\ECommerce-Platform.csproj",
+        "projectPath": "C:\\Users\\User\\Desktop\\ECommerce-Platform\\ECommerce-Platform\\ECommerce-Platform.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\Desktop\\Pa201MVCTask\\ECommerce-Platform\\ECommerce-Platform\\obj\\",
+        "outputPath": "C:\\Users\\User\\Desktop\\ECommerce-Platform\\ECommerce-Platform\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -49,6 +49,18 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

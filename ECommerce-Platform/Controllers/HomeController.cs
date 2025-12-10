@@ -1,32 +1,20 @@
-using System.Diagnostics;
-using ECommerce_Platform.Models;
+using ECommerce_Platform.Data;
+using ECommerce_Platform.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ECommerce_Platform.Controllers
 {
-    public class HomeController : Controller
+    public class HomeController(AppDbContext appDbContext) : Controller
     {
-        private readonly ILogger<HomeController> _logger;
-
-        public HomeController(ILogger<HomeController> logger)
-        {
-            _logger = logger;
-        }
-
         public IActionResult Index()
         {
-            return View();
+            var sliders = appDbContext.Sliders.ToList();
+            var homeVm = new HomeVm
+            {
+                Sliders = sliders
+            };
+            return View(homeVm);
         }
 
-        public IActionResult Privacy()
-        {
-            return View();
-        }
-
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
-        {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
-        }
     }
 }
