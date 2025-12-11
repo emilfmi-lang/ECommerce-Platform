@@ -7,16 +7,19 @@
 {
 
     <section class="hero">
-     <div class="container">
+        <div class="container">
             <div class="hero-content">
-   <h2>@slider.Title</h2>
-              <p>@slider.SubTitle</p>
-   <a href="@slider.ButtonUrl" class="btn-primary">
-                    @slider.ButtonText
-     </a>
+                <h2>@slider.Title</h2>
+                <p>@slider.SubTitle</p>
+                @if (!string.IsNullOrWhiteSpace(slider.ButtonText))
+                {
+                    <button class="btn-primary" onclick="document.getElementById('products').scrollIntoView({behavior: 'smooth'})">
+                        @slider.ButtonText
+                    </button>
+                }
             </div>
-     </div>
-  </section>
+        </div>
+    </section>
 }
 
 
