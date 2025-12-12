@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\User\\Desktop\\ECommerce-Platform\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{8C54F1E3-E949-3803-BC80-4B4A71E73250}|ECommerce-Platform\\ECommerce-Platform.csproj|c:\\users\\user\\desktop\\ecommerce-platform\\ecommerce-platform\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8C54F1E3-E949-3803-BC80-4B4A71E73250}|ECommerce-Platform\\ECommerce-Platform.csproj|solutionrelative:ecommerce-platform\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{8C54F1E3-E949-3803-BC80-4B4A71E73250}|ECommerce-Platform\\ECommerce-Platform.csproj|c:\\users\\user\\desktop\\ecommerce-platform\\ecommerce-platform\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{8C54F1E3-E949-3803-BC80-4B4A71E73250}|ECommerce-Platform\\ECommerce-Platform.csproj|solutionrelative:ecommerce-platform\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -33,10 +37,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{8C54F1E3-E949-3803-BC80-4B4A71E73250}|ECommerce-Platform\\ECommerce-Platform.csproj|c:\\users\\user\\desktop\\ecommerce-platform\\ecommerce-platform\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{8C54F1E3-E949-3803-BC80-4B4A71E73250}|ECommerce-Platform\\ECommerce-Platform.csproj|solutionrelative:ecommerce-platform\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8C54F1E3-E949-3803-BC80-4B4A71E73250}|ECommerce-Platform\\ECommerce-Platform.csproj|c:\\users\\user\\desktop\\ecommerce-platform\\ecommerce-platform\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{8C54F1E3-E949-3803-BC80-4B4A71E73250}|ECommerce-Platform\\ECommerce-Platform.csproj|solutionrelative:ecommerce-platform\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -50,7 +50,7 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "20251211062700_mig_2.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\ECommerce-Platform\\ECommerce-Platform\\Data\\Migrations\\20251211062700_mig_2.cs",
               "RelativeDocumentMoniker": "ECommerce-Platform\\Data\\Migrations\\20251211062700_mig_2.cs",
@@ -58,12 +58,11 @@
               "RelativeToolTip": "ECommerce-Platform\\Data\\Migrations\\20251211062700_mig_2.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-11T06:27:02.407Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-11T06:27:02.407Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\ECommerce-Platform\\ECommerce-Platform\\Data\\AppDbContext.cs",
               "RelativeDocumentMoniker": "ECommerce-Platform\\Data\\AppDbContext.cs",
@@ -71,24 +70,11 @@
               "RelativeToolTip": "ECommerce-Platform\\Data\\AppDbContext.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-11T06:24:50.785Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-11T06:24:50.785Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "_ViewImports.cshtml",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\ECommerce-Platform\\ECommerce-Platform\\Views\\_ViewImports.cshtml",
-              "RelativeDocumentMoniker": "ECommerce-Platform\\Views\\_ViewImports.cshtml",
-              "ToolTip": "C:\\Users\\User\\Desktop\\ECommerce-Platform\\ECommerce-Platform\\Views\\_ViewImports.cshtml",
-              "RelativeToolTip": "ECommerce-Platform\\Views\\_ViewImports.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-12-10T16:18:59.988Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "HomeVm.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\ECommerce-Platform\\ECommerce-Platform\\ViewModels\\HomeVm.cs",
               "RelativeDocumentMoniker": "ECommerce-Platform\\ViewModels\\HomeVm.cs",
@@ -100,7 +86,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Slider.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\ECommerce-Platform\\ECommerce-Platform\\Models\\Slider.cs",
               "RelativeDocumentMoniker": "ECommerce-Platform\\Models\\Slider.cs",
@@ -108,12 +94,11 @@
               "RelativeToolTip": "ECommerce-Platform\\Models\\Slider.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-10T16:12:13.317Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-10T16:12:13.317Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\ECommerce-Platform\\ECommerce-Platform\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "ECommerce-Platform\\Controllers\\HomeController.cs",
@@ -121,25 +106,48 @@
               "RelativeToolTip": "ECommerce-Platform\\Controllers\\HomeController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-10T16:04:44.977Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-10T16:04:44.977Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\ECommerce-Platform\\ECommerce-Platform\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "ECommerce-Platform\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\User\\Desktop\\ECommerce-Platform\\ECommerce-Platform\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "ECommerce-Platform\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGAAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-10T16:06:09.218Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\ECommerce-Platform\\ECommerce-Platform\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "ECommerce-Platform\\Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\User\\Desktop\\ECommerce-Platform\\ECommerce-Platform\\Views\\Home\\Index.cshtml*",
-              "RelativeToolTip": "ECommerce-Platform\\Views\\Home\\Index.cshtml*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAARAAAAAAAAAA==",
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\ECommerce-Platform\\ECommerce-Platform\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "ECommerce-Platform\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\User\\Desktop\\ECommerce-Platform\\ECommerce-Platform\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "ECommerce-Platform\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-12-10T16:06:09.218Z",
+              "WhenOpened": "2025-12-09T19:10:06.361Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\ECommerce-Platform\\ECommerce-Platform\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "ECommerce-Platform\\Views\\_ViewImports.cshtml",
+              "ToolTip": "C:\\Users\\User\\Desktop\\ECommerce-Platform\\ECommerce-Platform\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "ECommerce-Platform\\Views\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-10T16:18:59.988Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\ECommerce-Platform\\ECommerce-Platform\\appsettings.json",
               "RelativeDocumentMoniker": "ECommerce-Platform\\appsettings.json",
@@ -148,18 +156,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2025-12-10T16:43:03.345Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\ECommerce-Platform\\ECommerce-Platform\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "ECommerce-Platform\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\User\\Desktop\\ECommerce-Platform\\ECommerce-Platform\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "ECommerce-Platform\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-12-09T19:10:06.361Z"
             }
           ]
         }
