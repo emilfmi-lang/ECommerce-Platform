@@ -1,4 +1,4 @@
-using ECommerce_Platform.Data;
+﻿using ECommerce_Platform.Data;
 using ECommerce_Platform.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -10,27 +10,22 @@ namespace ECommerce_Platform.Controllers
         public IActionResult Index()
         {
             var sliders = appDbContext.Sliders.ToList();
+            var homeVm = new HomeVm
+            {
+                Sliders = sliders
+            };
+            return View(homeVm);
+        }
+        public IActionResult Product()
+        {
             var products = appDbContext.Products.
                 Include(x => x.Category).
                 ToList();
             var homeVm = new HomeVm
             {
-                Sliders = sliders,
                 Products = products
             };
-            return View(homeVm);
+            return View("ProductView", homeVm);
         }
-
-        //public IActionResult Product()
-        //{
-        //    var products = appDbContext.Products.
-        //        Include(x => x.Category).
-        //        ToList();
-        //    var homeVm = new HomeVm
-        //    {
-        //        Products = products
-        //    };
-        //    return View( homeVm);
-        //}
     }
 }

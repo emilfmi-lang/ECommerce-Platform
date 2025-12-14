@@ -1,0 +1,23 @@
+﻿@model HomeVm
+    
+@{
+    ViewData["Title"] = "Products";
+}
+
+@foreach(var product in Model.Products)
+{
+    <div class="product-card" data-category="@product.Category.Name.ToLower()" data-price="@product.Price">
+        <img src="~/assests/img/@product.ImageUrl" alt="@product.Name" class="product-image">
+        <div class="product-info">
+          <div class="product-category">@product.Category.Name</div>
+        <h3 class="product-name">@product.Name</h3>
+            <p class="product-description">@product.Title</p>
+     <div class="product-footer">
+          <span class="product-price">@product.Price ₼</span>
+          <button class="add-to-cart-btn" onclick="addToCart(@product.Id)">
+  @product.ButtonText
+      </button>
+            </div>
+</div>
+    </div>
+}

@@ -22,76 +22,272 @@
     </section>
 }
 
-
-
 <!-- Filters -->
 <section class="filters" id="products">
     <div class="container">
         <div class="filter-bar">
-  <div class="filter-group">
-      <label>Kateqoriya:</label>
-                <select id="categoryFilter">
-          <option value="all">Hamısı</option>
-                    <option value="telefon">Telefonlar</option>
-   <option value="notebook">Notebooklar</option>
-   <option value="aksesuar">Aksesuarlar</option>
-   <option value="audio">Audio</option>
- </select>
-     </div>
             <div class="filter-group">
-       <label>Qiymət:</label>
-          <select id="priceFilter">
-        <option value="all">Hamısı</option>
-       <option value="0-500">0 - 500 ₼</option>
-      <option value="500-1000">500 - 1000 ₼</option>
-      <option value="1000-2000">1000 - 2000 ₼</option>
-        <option value="2000+">2000 ₼+</option>
+                <label>Kateqoriya:</label>
+                <select id="categoryFilter">
+                    <option value="all">Hamısı</option>
+                    <option value="telefon">Telefonlar</option>
+                    <option value="notebook">Notebooklar</option>
+                    <option value="aksesuar">Aksesuarlar</option>
+                    <option value="audio">Audio</option>
                 </select>
-        </div>
-      <div class="filter-group">
-   <label>Sıralama:</label>
-    <select id="sortFilter">
-            <option value="default">Standart</option>
-    <option value="price-asc">Qiymət: Aşağıdan yuxarı</option>
-       <option value="price-desc">Qiymət: Yuxarıdan aşağı</option>
-     <option value="name">Ad: A-Z</option>
-          </select>
-      </div>
+            </div>
+            <div class="filter-group">
+                <label>Qiymət:</label>
+                <select id="priceFilter">
+                    <option value="all">Hamısı</option>
+                    <option value="0-500">0 - 500 ₼</option>
+                    <option value="500-1000">500 - 1000 ₼</option>
+                    <option value="1000-2000">1000 - 2000 ₼</option>
+                    <option value="2000+">2000 ₼+</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label>Sıralama:</label>
+                <select id="sortFilter">
+                    <option value="default">Standart</option>
+                    <option value="price-asc">Qiymət: Aşağıdan yuxarı</option>
+                    <option value="price-desc">Qiymət: Yuxarıdan aşağı</option>
+                    <option value="name">Ad: A-Z</option>
+                </select>
+            </div>
         </div>
     </div>
 </section>
-
-<!-- Products Grid -->
 <section class="products-section">
     <div class="container">
         <div class="products-grid" id="productsGrid">
- <!-- Products will be loaded by JavaScript -->
+
+            <!-- Products Grid -->
+            <!-- Məhsul 1 -->
+            @foreach(var product in Model.Products)
+            {
+                <div class="product-card" data-category="telefon" data-price="2499">
+                    <img src="/assests/img/@product.ImageUrl" alt="iPhone 15 Pro" class="product-image">
+                    <div class="product-info">
+                        <div class="product-category">Telefonlar</div>
+                        <h3 class="product-name">@product.Name</h3>
+                        <p class="product-description">@product.Title</p>
+                        <div class="product-footer">
+                            <span class="product-price">@product.Price₼</span>
+                            <button class="add-to-cart-btn" onclick="addToCart(1)">
+                                @product.ButtonText
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            }
+          
+
+
+            <!-- Məhsul 2 -->
+            <div class="product-card" data-category="telefon" data-price="1899">
+                <img src="https://images.unsplash.com/photo-1610945415295-d9bbf067e59c?w=400" alt="Samsung Galaxy S24" class="product-image">
+                <div class="product-info">
+                    <div class="product-category">Telefonlar</div>
+                    <h3 class="product-name">Samsung Galaxy S24</h3>
+                    <p class="product-description">512GB, Phantom Black, Snapdragon 8 Gen 3</p>
+                    <div class="product-footer">
+                        <span class="product-price">1899 ₼</span>
+                        <button class="add-to-cart-btn" onclick="addToCart(2)">
+                            Səbətə at
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Məhsul 3 -->
+            <div class="product-card" data-category="notebook" data-price="4999">
+                <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=400" alt="MacBook Pro 16&quot;" class="product-image">
+                <div class="product-info">
+                    <div class="product-category">Notebooklar</div>
+                    <h3 class="product-name">MacBook Pro 16"</h3>
+                    <p class="product-description">M3 Pro, 32GB RAM, 1TB SSD</p>
+                    <div class="product-footer">
+                        <span class="product-price">4999 ₼</span>
+                        <button class="add-to-cart-btn" onclick="addToCart(3)">
+                            Səbətə at
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Məhsul 4 -->
+            <div class="product-card" data-category="notebook" data-price="3299">
+                <img src="https://images.unsplash.com/photo-1593642632823-8f785ba67e45?w=400" alt="Dell XPS 15" class="product-image">
+                <div class="product-info">
+                    <div class="product-category">Notebooklar</div>
+                    <h3 class="product-name">Dell XPS 15</h3>
+                    <p class="product-description">Intel i9, 32GB RAM, RTX 4060</p>
+                    <div class="product-footer">
+                        <span class="product-price">3299 ₼</span>
+                        <button class="add-to-cart-btn" onclick="addToCart(4)">
+                            Səbətə at
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Məhsul 5 -->
+            <div class="product-card" data-category="audio" data-price="549">
+                <img src="https://images.unsplash.com/photo-1606841837239-c5a1a4a07af7?w=400" alt="AirPods Pro 2" class="product-image">
+                <div class="product-info">
+                    <div class="product-category">Audio</div>
+                    <h3 class="product-name">AirPods Pro 2</h3>
+                    <p class="product-description">USB-C, Aktiv səs-küyün yox edilməsi</p>
+                    <div class="product-footer">
+                        <span class="product-price">549 ₼</span>
+                        <button class="add-to-cart-btn" onclick="addToCart(5)">
+                            Səbətə at
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Məhsul 6 -->
+            <div class="product-card" data-category="audio" data-price="799">
+                <img src="https://images.unsplash.com/photo-1618366712010-f4ae9c647dcb?w=400" alt="Sony WH-1000XM5" class="product-image">
+                <div class="product-info">
+                    <div class="product-category">Audio</div>
+                    <h3 class="product-name">Sony WH-1000XM5</h3>
+                    <p class="product-description">Premium noise cancelling qulaqlıq</p>
+                    <div class="product-footer">
+                        <span class="product-price">799 ₼</span>
+                        <button class="add-to-cart-btn" onclick="addToCart(6)">
+                            Səbətə at
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Məhsul 7 -->
+            <div class="product-card" data-category="aksesuar" data-price="249">
+                <img src="https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=400" alt="Magic Keyboard" class="product-image">
+                <div class="product-info">
+                    <div class="product-category">Aksesuarlar</div>
+                    <h3 class="product-name">Magic Keyboard</h3>
+                    <p class="product-description">Touch ID, wireless, ağ rəng</p>
+                    <div class="product-footer">
+                        <span class="product-price">249 ₼</span>
+                        <button class="add-to-cart-btn" onclick="addToCart(7)">
+                            Səbətə at
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Məhsul 8 -->
+            <div class="product-card" data-category="aksesuar" data-price="199">
+                <img src="https://images.unsplash.com/photo-1527814050087-3793815479db?w=400" alt="Logitech MX Master 3S" class="product-image">
+                <div class="product-info">
+                    <div class="product-category">Aksesuarlar</div>
+                    <h3 class="product-name">Logitech MX Master 3S</h3>
+                    <p class="product-description">Wireless siçan, 8K DPI</p>
+                    <div class="product-footer">
+                        <span class="product-price">199 ₼</span>
+                        <button class="add-to-cart-btn" onclick="addToCart(8)">
+                            Səbətə at
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Məhsul 9 -->
+            <div class="product-card" data-category="telefon" data-price="2299">
+                <img src="https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?w=400" alt="iPad Pro 12.9&quot;" class="product-image">
+                <div class="product-info">
+                    <div class="product-category">Telefonlar</div>
+                    <h3 class="product-name">iPad Pro 12.9"</h3>
+                    <p class="product-description">M2 çip, 256GB, Cellular</p>
+                    <div class="product-footer">
+                        <span class="product-price">2299 ₼</span>
+                        <button class="add-to-cart-btn" onclick="addToCart(9)">
+                            Səbətə at
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Məhsul 10 -->
+            <div class="product-card" data-category="audio" data-price="449">
+                <img src="https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=400" alt="Samsung Galaxy Buds Pro" class="product-image">
+                <div class="product-info">
+                    <div class="product-category">Audio</div>
+                    <h3 class="product-name">Samsung Galaxy Buds Pro</h3>
+                    <p class="product-description">ANC, 360 audio, suya davamlı</p>
+                    <div class="product-footer">
+                        <span class="product-price">449 ₼</span>
+                        <button class="add-to-cart-btn" onclick="addToCart(10)">
+                            Səbətə at
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Məhsul 11 -->
+            <div class="product-card" data-category="notebook" data-price="3799">
+                <img src="https://images.unsplash.com/photo-1603302576837-37561b2e2302?w=400" alt="ASUS ROG Zephyrus" class="product-image">
+                <div class="product-info">
+                    <div class="product-category">Notebooklar</div>
+                    <h3 class="product-name">ASUS ROG Zephyrus</h3>
+                    <p class="product-description">RTX 4080, AMD Ryzen 9, 240Hz ekran</p>
+                    <div class="product-footer">
+                        <span class="product-price">3799 ₼</span>
+                        <button class="add-to-cart-btn" onclick="addToCart(11)">
+                            Səbətə at
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Məhsul 12 -->
+            <div class="product-card" data-category="aksesuar" data-price="89">
+                <img src="https://images.unsplash.com/photo-1625948515291-69613efd103f?w=400" alt="USB-C Hub" class="product-image">
+                <div class="product-info">
+                    <div class="product-category">Aksesuarlar</div>
+                    <h3 class="product-name">USB-C Hub</h3>
+                    <p class="product-description">7-in-1, HDMI 4K, 100W PD</p>
+                    <div class="product-footer">
+                        <span class="product-price">89 ₼</span>
+                        <button class="add-to-cart-btn" onclick="addToCart(12)">
+                            Səbətə at
+                        </button>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
 </section>
 
 <!-- Cart Sidebar -->
 <div class="cart-sidebar" id="cartSidebar">
-  <div class="cart-header">
+    <div class="cart-header">
         <h3>Səbət</h3>
         <button class="close-cart" id="closeCart">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-      <line x1="18" y1="6" x2="6" y2="18"></line>
-           <line x1="6" y1="6" x2="18" y2="18"></line>
-   </svg>
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
         </button>
-  </div>
+    </div>
     <div class="cart-items" id="cartItems">
         <!-- Cart items will be loaded here -->
     </div>
- <div class="cart-footer">
+    <div class="cart-footer">
         <div class="cart-total">
- <span>Toplam:</span>
-     <span id="cartTotal">0 ₼</span>
+            <span>Toplam:</span>
+            <span id="cartTotal">0 ₼</span>
         </div>
         <button class="btn-primary btn-checkout" id="checkoutBtn">Sifarişi tamamla</button>
- </div>
+    </div>
 </div>
 
 <!-- Cart Overlay -->
 <div class="cart-overlay" id="cartOverlay"></div>
+
+
