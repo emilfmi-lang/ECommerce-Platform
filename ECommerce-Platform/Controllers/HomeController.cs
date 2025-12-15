@@ -20,17 +20,16 @@ namespace ECommerce_Platform.Controllers
             };
             return View(homeVm);
         }
-
-        //public IActionResult Product()
-        //{
-        //    var products = appDbContext.Products.
-        //        Include(x => x.Category).
-        //        ToList();
-        //    var homeVm = new HomeVm
-        //    {
-        //        Products = products
-        //    };
-        //    return View( homeVm);
-        //}
+        public IActionResult Productss()
+        {
+            var products = appDbContext.Products.
+               Include(x => x.Category).
+               ToList();
+            var homeVm = new HomeVm
+            {
+                Products = products
+            };
+            return View(homeVm);
+        }
     }
 }

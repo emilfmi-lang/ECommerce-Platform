@@ -61,7 +61,6 @@ C:\Users\User\Desktop\ECommerce-Platform\ECommerce-Platform\obj\Debug\net8.0\sta
 C:\Users\User\Desktop\ECommerce-Platform\ECommerce-Platform\obj\Debug\net8.0\staticwebassets.build.json.cache
 C:\Users\User\Desktop\ECommerce-Platform\ECommerce-Platform\obj\Debug\net8.0\staticwebassets.development.json
 C:\Users\User\Desktop\ECommerce-Platform\ECommerce-Platform\obj\Debug\net8.0\staticwebassets.build.endpoints.json
-C:\Users\User\Desktop\ECommerce-Platform\ECommerce-Platform\obj\Debug\net8.0\swae.build.ex.cache
 C:\Users\User\Desktop\ECommerce-Platform\ECommerce-Platform\obj\Debug\net8.0\ECommerce-Platform.dll
 C:\Users\User\Desktop\ECommerce-Platform\ECommerce-Platform\obj\Debug\net8.0\refint\ECommerce-Platform.dll
 C:\Users\User\Desktop\ECommerce-Platform\ECommerce-Platform\obj\Debug\net8.0\ECommerce-Platform.pdb
